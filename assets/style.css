@@ -5,52 +5,87 @@
 }
 
 .headshot{
-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+body{
+    margin-left: 150px;
+    margin-right:150px;
+    background-color: rgba(128, 128, 128, 0.144);
 }
 
 header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin-top: 300px;
-    
+    text-align: center;
 
 }
 
 h1{
-    padding:20px;
+    padding:40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:50px;
+    font-size:48px;
+    font-weight:200;
     letter-spacing: 25px;
 }
 
 p{
     text-align: center;
-    padding:20px 150px;
+    padding:20px 50px;
     font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 
 }
 
-nav{
+nav {
     text-align:center;
-    padding: 50px;
+    letter-spacing: 5px;
+    width: 100%;
+    overflow: auto;
 }
 
 nav a {
     text-decoration: none;
-    padding: 80px 80px 80px 0px;
+    padding: 8px 3px 3px 5px;
     width:auto;
-    font-size: 20px;
+    font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+    color:darkgrey;
+
+}
+
+nav a:visited {
+    color: darkgrey;
+
+}
+
+nav a:hover {
+    color:lightgray;
+    background-color:rgba(211, 211, 211, 0.39);
+    border-radius: 4px;
+}
+
+nav a:focus {
+    background-color: rgba(211, 211, 211, 0.39);
+    color: darkgrey;
+    border-radius: 10px;
+}
+
+nav a:active {
+    background-color: rgba(211, 211, 211, 0.39);
+    color: white;
 }
 
 a {
     font-variant: small-caps;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-me {
+
 }
 
 h2 {
@@ -75,55 +110,63 @@ h2 {
     justify-content: space-between;
     align-items:stretch;
     text-align: center;
-    padding: 20px 150px 20px 150px;
     align-items: stretch;
     
 }
 
-.project-container>div {
-   box-sizing: border-box;
-    margin: 10px;
+.project-container>div>.featured-project,
+.project-container>div>.secondary-project,
+.project-container>div>.third-project,
+{
+    box-sizing: border-box;
+    margin: 5px;
     outline:auto;
     outline-color: gray;
     outline-width: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:lightgray;
-    text-align: center;
+    /* background-color:lightgray; */
 }
 
 h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
-    padding: 5px 20px 5px 20px; 
+    padding: 5px 5px 5px 5px; 
+    background-color: white;
+    opacity: 40%;
+    font-variant: small-caps;
+    letter-spacing: 3px;
 }
 
-/* .featured-project{
+.featured-project{
     display: block;
     width:100%;
-    align-self: center;
-    padding:125px 300px 125px 300px;
+    height:300px;
+    padding:50px 0px 50px 0px;
+    background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
+    background-size: cover;
 }
 
 .secondary-project{
     display: block;
-    flex-basis:49%;
-    padding:80px 300px 80px 300px;
-    width: 48%
+    flex-basis:48%;
+    margin:10px 0px 10px 0px;
+    padding:80px 0px 80px 0px;
+    background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
+    background-size: cover;
 }
 
 .third-project{
     display: block;
-    flex-basis: 49%;
-    padding:80px 300px 80px 300px;
-    width: 48%;
-    
+    flex-basis: 48%;
+    margin:10px 0px 10px 0px;
+    padding:80px 0px 80px 0px;
+    background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
+    background-size: cover;
 }
 
 #contact-me {
-    text-decoration: none;
-    padding: 80px 80px 80px 0px;
-    width:auto;
+    padding: 80px 80px 80px 80px;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -132,6 +175,7 @@ h3{
 #contact-me>a {
     padding:30px;
     text-decoration: none;
+    color: grey;
 }
 
 .featured-project>a:hover {
@@ -141,9 +185,16 @@ h3{
 
 
 
-@media screen and (max-width:834px){
-    .featured-project{
-        width:100%;
+@media screen and (max-width:840px){
+    nav a {
+       display: block;
+        float: none;
+    }
+    #contact-me a {
+        display:block;
+        float: none;
+    }
+
     }
     
     .secondary-project {
@@ -152,4 +203,8 @@ h3{
     .secondary-project{
         width:50%;
     }
-} */
+
+    nav{
+        width:100%
+    }
+}
