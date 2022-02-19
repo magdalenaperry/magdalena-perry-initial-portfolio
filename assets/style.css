@@ -1,4 +1,155 @@
 *{
     margin:0px;
     padding:0px;
+    /* box-sizing: border-box; */
+}
+
+.headshot{
+border-radius: 50%;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    
+
+}
+
+h1{
+    padding:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:50px;
+    letter-spacing: 25px;
+}
+
+p{
+    text-align: center;
+    padding:20px 150px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+nav{
+    text-align:center;
+    padding: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 80px 80px 80px 0px;
+    width:auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    font-variant: small-caps;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    padding:20px;
+
+}
+
+h1,
+nav>a,
+h2 {
+    font-variant:small-caps;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.project-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:stretch;
+    text-align: center;
+    padding: 20px 150px 20px 150px;
+    align-items: stretch;
+    
+}
+
+.project-container>div {
+   box-sizing: border-box;
+    margin: 10px;
+    outline:auto;
+    outline-color: gray;
+    outline-width: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:lightgray;
+    text-align: center;
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 20px 5px 20px; 
+}
+
+.featured-project{
+    display: block;
+    width:100%;
+    align-self: center;
+    padding:125px 300px 125px 300px;
+}
+
+.secondary-project{
+    display: block;
+    flex-basis:49%;
+    padding:80px 300px 80px 300px;
+    width: 48%
+}
+
+.third-project{
+    display: block;
+    flex-basis: 49%;
+    padding:80px 300px 80px 300px;
+    width: 48%;
+    
+}
+
+#contact-me {
+    text-decoration: none;
+    padding: 80px 80px 80px 0px;
+    width:auto;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#contact-me>a {
+    padding:30px;
+    text-decoration: none;
+}
+
+.featured-project>a:hover {
+
+}
+
+
+
+
+@media screen and (max-width:834px){
+    .featured-project{
+        width:100%;
+    }
+    
+    .secondary-project {
+        width:50%;
+    }
+    .secondary-project{
+        width:50%;
+    }
 }
