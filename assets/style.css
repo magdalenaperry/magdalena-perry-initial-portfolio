@@ -4,15 +4,9 @@
     /* box-sizing: border-box; */
 }
 
+/* profile picture, name, nav bar styling */
 .headshot{
     border-radius: 50%;
-}
-
-
-body{
-    margin-left: 150px;
-    margin-right:150px;
-    background-color: rgba(128, 128, 128, 0.144);
 }
 
 header{
@@ -27,15 +21,8 @@ h1{
     font-size:48px;
     font-weight:200;
     letter-spacing: 25px;
-}
-
-p{
-    text-align: center;
-    padding:20px 50px;
-    font-weight: 100;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-
+    text-align:center;
+    font-variant: small-caps;
 }
 
 nav {
@@ -47,23 +34,23 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding: 8px 3px 3px 5px;
+    padding: 5px 3px 3px 5px;
     width:auto;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 20px;
     color:darkgrey;
-
 }
 
+/* navigation bar clicks */
 nav a:visited {
     color: darkgrey;
 
 }
 
 nav a:hover {
-    color:lightgray;
-    background-color:rgba(211, 211, 211, 0.39);
+    color: lightgray;
+    background-color: rgba(211, 211, 211, 0.39);
     border-radius: 4px;
 }
 
@@ -78,31 +65,40 @@ nav a:active {
     color: white;
 }
 
-a {
+nav a {
     font-variant: small-caps;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.about-me {
-
-}
-
-h2 {
+    font-weight: 200;
     text-align: center;
-    padding:20px;
-
 }
 
-h1,
-nav>a,
-h2 {
-    font-variant:small-caps;
+/* main body: about me, projects, and text */
+body {
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(128, 128, 128, 0.144);
+    color: rgb(29, 28, 28);
+    line-height: 1.5;
+}
+
+p {
     text-align: center;
+    padding: 5px 50px 5px 50px;
+    font-weight: 100;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    font-size: 16px;
 }
 
+h2 {
+    text-align: center;
+    padding:30px 0px 5px 0px;
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+/* project containers, and text */
 .project-container{
     display:flex;
     flex-direction: row;
@@ -165,6 +161,7 @@ h3{
     background-size: cover;
 }
 
+/* contact section and links*/
 #contact-me {
     padding: 80px 80px 80px 80px;
     font-size: 20px;
@@ -173,18 +170,41 @@ h3{
 }
 
 #contact-me>a {
-    padding:30px;
+    padding: 5px 3px 3px 5px;
+    margin: 20px;
     text-decoration: none;
-    color: grey;
+    color: darkgrey;
+    font-variant:small-caps;
+    letter-spacing: 5px;
+    width: auto;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
-.featured-project>a:hover {
+#contact-me>a:visited {
+    color: darkgrey;
+}
 
+#contact-me>a:hover {
+    color: lightgray;
+    background-color: rgba(211, 211, 211, 0.39);
+    border-radius: 4px;
+}
+
+#contact-me>a:focus {
+    background-color: rgba(211, 211, 211, 0.39);
+    color: darkgrey;
+    border-radius: 10px;
+}
+
+#contact-me>a:active {
+    background-color: rgba(211, 211, 211, 0.39);
+    color: white;
 }
 
 
-
-
+/* media queries */
 @media screen and (max-width:840px){
     nav a {
        display: block;
@@ -196,7 +216,7 @@ h3{
     }
 
     }
-    
+/*     
     .secondary-project {
         width:50%;
     }
@@ -207,4 +227,4 @@ h3{
     nav{
         width:100%
     }
-}
+} */
