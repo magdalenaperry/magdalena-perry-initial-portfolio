@@ -9,10 +9,10 @@
     border-radius: 50%;
 }
 
+/* TODO: h1 tag will not update to center! */
 header{
     margin-top: 300px;
     text-align: center;
-
 }
 
 h1{
@@ -26,18 +26,19 @@ h1{
 }
 
 nav {
+    padding-bottom: 50px;
     text-align:center;
     letter-spacing: 5px;
-    width: 100%;
-    overflow: auto;
+    /* width: 100%;
+    overflow: auto; */
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav a {
     text-decoration: none;
     padding: 5px 3px 3px 5px;
-    width:auto;
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* width:auto; */
     margin: 20px;
     color:darkgrey;
 }
@@ -45,7 +46,6 @@ nav a {
 /* navigation bar clicks */
 nav a:visited {
     color: darkgrey;
-
 }
 
 nav a:hover {
@@ -78,11 +78,15 @@ body {
     margin-left: 150px;
     margin-right: 150px;
     background-color: rgba(128, 128, 128, 0.144);
-    color: rgb(29, 28, 28);
+    color: rgba(0, 0, 0, 0.644);
     line-height: 1.5;
 }
 
-p {
+.about-me{
+padding-top: 40px;;
+}
+
+.about {
     text-align: center;
     padding: 5px 50px 5px 50px;
     font-weight: 100;
@@ -106,7 +110,6 @@ h2 {
     justify-content: space-between;
     align-items:stretch;
     text-align: center;
-    align-items: stretch;
     
 }
 
@@ -141,6 +144,7 @@ h3{
     padding:50px 0px 50px 0px;
     background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
     background-size: cover;
+    background-image:
 }
 
 .secondary-project{
@@ -163,68 +167,99 @@ h3{
 
 /* contact section and links*/
 #contact-me {
-    padding: 80px 80px 80px 80px;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-#contact-me>a {
-    padding: 5px 3px 3px 5px;
-    margin: 20px;
-    text-decoration: none;
-    color: darkgrey;
-    font-variant:small-caps;
-    letter-spacing: 5px;
-    width: auto;
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    display: block;
+    flex-basis:48%;
+    margin:10px 0px 10px 0px;
+    box-sizing:border-box;
+    text-decoration: none;
 }
 
-#contact-me>a:visited {
+p{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+    font-weight: 100;
+    font-family: Verdana,
+    Geneva,
+    Tahoma,
+    sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+i {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+#contact-me>div {
+    display: inline-block;
+}
+
+#contact-me>a {
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
     color: darkgrey;
+    font-variant:small-caps;
+    letter-spacing: 3px;
+    width: auto;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    justify-content: center;
 }
 
-#contact-me>a:hover {
+#contact-me>a>div:hover {
     color: lightgray;
     background-color: rgba(211, 211, 211, 0.39);
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
-#contact-me>a:focus {
+#contact-me>a>div:visited {
+    color: darkgrey;
+}
+
+#contact-me>a>div:focus {
     background-color: rgba(211, 211, 211, 0.39);
     color: darkgrey;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-#contact-me>a:active {
+#contact-me>a>div:active {
     background-color: rgba(211, 211, 211, 0.39);
     color: white;
 }
 
 
 /* media queries */
-@media screen and (max-width:840px){
+@media screen and (max-width:870px){
     nav a {
-       display: block;
+        display: block;
         float: none;
     }
+}
+
+@media screen and (max-width:970px){
     #contact-me a {
-        display:block;
+        display:inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         float: none;
-    }
+        justify-items: center;
+        align-items:center; }
 
+    /* header {
+        text-align: center;
+    }     */
+}
+/* 
+@media screen and (max-width:1150){
+    .name {
+        font-size: 18px;
     }
-/*     
-    .secondary-project {
-        width:50%;
-    }
-    .secondary-project{
-        width:50%;
-    }
-
-    nav{
-        width:100%
-    }
+    
 } */
