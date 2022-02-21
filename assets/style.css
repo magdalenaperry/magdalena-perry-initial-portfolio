@@ -1,6 +1,7 @@
 *{
     margin:0px;
     padding:0px;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     /* box-sizing: border-box; */
 }
 
@@ -17,12 +18,13 @@ header{
 
 h1{
     padding:40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size:38px;
+    font-family:'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-size:48px;
     font-weight:200;
     letter-spacing: 25px;
     text-align:center;
     font-variant: small-caps;
+    font-weight: 200;
     /* transition: 500ms ease-in; */
 }
 
@@ -33,7 +35,8 @@ nav {
     /* width: 100%;
     overflow: auto; */
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif; */
+    /* font-weight: bold; */
     /* transition: 253ms ease; */
 }
 
@@ -46,9 +49,9 @@ nav a {
     text-align: center;
     /* transition: 253ms ease; */
     font-variant: small-caps;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
+    font-size: 18px;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -84,17 +87,19 @@ body {
     color: rgba(0, 0, 0, 0.644);
     line-height: 1.5;
 }
-
+/* about me section */
 .about-me {
 padding: 30px 0px 30px 0px;
 }
 
+/* about me paragraph */
 .about {
     text-align: center;
     padding: 5px 50px 5px 50px;
     font-weight: 100;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+    letter-spacing: 1px;
 }
 #projects{
     padding: 100px 0px 20px 0px;
@@ -104,10 +109,10 @@ h2 {
     text-align: center;
     padding:30px 0px 5px 0px;
     font-variant: small-caps;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
     letter-spacing: 10px;
-    font-size:15px;
+    font-size:20px;
 }
 
 /* project containers, and text */
@@ -121,19 +126,6 @@ h2 {
     text-align: center;
 }
 
-/* .project-container>div>.featured-project,
-.project-container>div>.secondary-project,
-.project-container>div>.third-project,
-{
-    box-sizing: border-box;
-    margin: 5px;
-    outline:auto;
-    outline-color: gray;
-    outline-width: 3px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color:lightgray; */
-}
-
 /* not sure why this makes everything weird? */
 .first-project-link{
     color:yellow;
@@ -143,15 +135,15 @@ h2 {
 .first-project-link, 
 .secondary-project-link,
 .third-project-link{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    color: rgba(0, 0, 0, 0.877);
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
     text-align: center;
     padding: 5px 5px 5px 5px; 
     background-color: rgba(255, 255, 255, 0.027);
     opacity: 60%;
     font-variant: small-caps;
     letter-spacing: 3px;
-    color: rgba(0, 0, 0, 0.877);
     text-decoration: none;
 }
 
@@ -247,7 +239,7 @@ h3{
 /* contact section and links*/
 #contact-me {
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     display: block;
     flex-basis:48%;
@@ -261,16 +253,13 @@ p{
     text-align: center;
     padding: 20px 5px 20px 5px;
     font-weight: 100;
-    font-family: Verdana,
-    Geneva,
-    Tahoma,
-    sans-serif;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     text-decoration: none;
 }
 
 i {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     padding: 0px 10px 0px 10px;
 }
@@ -297,7 +286,7 @@ i {
     letter-spacing: 3px;
     width: auto;
     font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     justify-content: center;
 }
