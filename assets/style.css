@@ -23,6 +23,7 @@ h1{
     letter-spacing: 25px;
     text-align:center;
     font-variant: small-caps;
+    /* transition: 500ms ease-in; */
 }
 
 nav {
@@ -33,25 +34,35 @@ nav {
     overflow: auto; */
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* transition: 253ms ease; */
 }
 
 nav a {
     text-decoration: none;
-    padding: 5px 3px 3px 5px;
+    padding: 5px 5px 5px 5px;
     /* width:auto; */
     margin: 20px;
     color:darkgrey;
+    text-align: center;
+    /* transition: 253ms ease; */
+    font-variant: small-caps;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    text-align: center;
 }
 
 /* navigation bar clicks */
 nav a:visited {
     color: darkgrey;
+    
 }
 
 nav a:hover {
     color: lightgray;
     background-color: rgba(211, 211, 211, 0.39);
     border-radius: 4px;
+    transition: 253ms ease;
 }
 
 nav a:focus {
@@ -63,14 +74,6 @@ nav a:focus {
 nav a:active {
     background-color: rgba(211, 211, 211, 0.39);
     color: white;
-}
-
-nav a {
-    font-variant: small-caps;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 200;
-    text-align: center;
 }
 
 /* main body: about me, projects, and text */
@@ -103,6 +106,7 @@ h2 {
 }
 
 /* project containers, and text */
+/* CORRECT */
 .project-container{
     display:flex;
     flex-direction: row;
@@ -110,10 +114,9 @@ h2 {
     justify-content: space-between;
     align-items:stretch;
     text-align: center;
-    
 }
 
-.project-container>div>.featured-project,
+/* .project-container>div>.featured-project,
 .project-container>div>.secondary-project,
 .project-container>div>.third-project,
 {
@@ -123,31 +126,55 @@ h2 {
     outline-color: gray;
     outline-width: 3px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-color:lightgray; */
+    background-color:lightgray; */
 }
 
-h3{
+/* not sure why this makes everything weird? */
+.first-project-link{
+    color:yellow;
+}
+
+/* projects' links' text formatting */
+.first-project-link, 
+.secondary-project-link,
+.third-project-link{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     text-align: center;
     padding: 5px 5px 5px 5px; 
-    background-color: white;
-    opacity: 40%;
+    background-color: rgba(255, 255, 255, 0.027);
+    opacity: 60%;
     font-variant: small-caps;
     letter-spacing: 3px;
+    color: rgba(0, 0, 0, 0.877);
+    text-decoration: none;
 }
 
-.featured-project{
+/* sets up featured project sizing */
+.first-project-link{
     display: block;
+    /* flex-basis:100%; */
     width:100%;
     height:300px;
     padding:50px 0px 50px 0px;
     background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
     background-size: cover;
-    background-image:
+    border-radius: 3px;
+    transition: 253ms ease-out;
 }
 
-.secondary-project{
+/* .featured-project>.a{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: 0; */
+}
+
+/* sets up second project sizing */
+/* not sure why I can't delete this */
+.secondary-project-link{
     display: block;
     flex-basis:48%;
     margin:10px 0px 10px 0px;
@@ -155,14 +182,37 @@ h3{
     background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
     background-size: cover;
 }
-
-.third-project{
+.secondary-project-link,
+.third-project-link{
     display: block;
     flex-basis: 48%;
     margin:10px 0px 10px 0px;
     padding:80px 0px 80px 0px;
     background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
     background-size: cover;
+    border-radius: 3px;
+    transition: 253ms ease;
+}
+
+
+
+.first-project-link:hover{
+    background-image: url(https://via.placeholder.com/500);
+    background-size: cover;
+    background-position: center;
+}
+
+.secondary-project-link:hover{
+    background-image: url(https://via.placeholder.com/500);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.third-project-link:hover{
+    background-image: url(https://via.placeholder.com/500);
+    background-size: cover;
+    background-position: center;
 }
 
 /* contact section and links*/
@@ -236,30 +286,20 @@ i {
 
 
 /* media queries */
-@media screen and (max-width:870px){
+@media screen and (max-width:915px){
     nav a {
         display: block;
         float: none;
     }
 }
 
-@media screen and (max-width:970px){
+@media screen and (min-width:1075px){
     #contact-me a {
         display:inline-flex;
         flex-wrap: wrap;
         flex-direction: column;
         float: none;
         justify-items: center;
-        align-items:center; }
-
-    /* header {
-        text-align: center;
-    }     */
-}
-/* 
-@media screen and (max-width:1150){
-    .name {
-        font-size: 18px;
+        align-items:center; 
     }
-    
-} */
+}
