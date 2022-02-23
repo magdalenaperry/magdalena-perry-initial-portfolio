@@ -62,10 +62,12 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: lightgray;
+    color: grey;
+    font-weight: bold;
     background-color: rgba(211, 211, 211, 0.39);
     border-radius: 4px;
     transition: 253ms ease;
+
 }
 
 nav a:focus {
@@ -101,6 +103,11 @@ padding: 30px 0px 30px 0px;
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+strong{
+    font-size: larger;
+}
+
 #projects{
     padding: 100px 0px 20px 0px;
 }
@@ -138,18 +145,23 @@ h2 {
     color: rgba(0, 0, 0, 0.877);
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    text-align: center;
+    text-align: right;
     padding: 5px 5px 5px 5px; 
     background-color: rgba(255, 255, 255, 0.027);
     opacity: 60%;
     font-variant: small-caps;
     letter-spacing: 3px;
     text-decoration: none;
+    transition: 253ms ease;
 }
 
 h3{
     background-color: rgba(255, 255, 255, 0.315);
     padding-right: 10px;
+}
+
+a:hover h3 {
+    background-color: transparent;
 }
 
 /* sets up featured project sizing */
@@ -163,6 +175,7 @@ h3{
     background-size: cover;
     border-radius: 3px;
     transition: 253ms ease-out;
+
 }
 
 /* sets up second project sizing */
@@ -191,49 +204,35 @@ h3{
 
 /* project link hovers */
 .first-project-link:hover{
-    background-image: url(https://via.placeholder.com/500);
+    background-image: url(/assets/magdalenas-bakery-project.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    overflow: scroll;
+    color: rgba(0, 0, 0, 0);
+    font-weight: bold;
 }
 
 .secondary-project-link:hover{
-    background-image: url(https://via.placeholder.com/500);
+    background-image: url(/assets/cheatsheet.png);
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    color: rgba(0, 0, 0, 0);
+    font-weight: bold;
 }
 
 .third-project-link:hover{
-    background-image: url(https://via.placeholder.com/500);
+    background-image: url(/assets/refactored_website_screenshot.png);
     background-size: cover;
     background-position: center;
+    color: rgba(0, 0, 0, 0);
+    font-weight:bold;
+    background-position: top;
 }
 
-/* project link focus */
-.first-project-link:focus {
-
-}
-
-.secondary-project-link:focus {
- 
-}
-
-.third-project-link:focus {
-
-}
-
-/* project link active  */
-
-.first-project-link:active {
-
-}
-
-.secondary-project-link:active {
-
-
-}
-
-.third-project-link:active {
-
+.first-project-link h3:hover,
+.secondary-project-link h3:hover,
+.third-project-link h3:hover {
+    
 }
 
 /* contact section and links*/
@@ -241,11 +240,19 @@ h3{
     font-size: 16px;
     font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    display: block;
-    flex-basis:48%;
-    margin:10px 0px 10px 0px;
-    box-sizing:border-box;
-    text-decoration: none;
+    /* display: block; */
+    /* flex-basis:48%; */
+    /* margin:10px 0px 10px 0px; */
+    /* box-sizing:border-box;
+    text-decoration: none; */
+    /* position: absolute; */
+    left:0;
+    right: 0;
+    width:100%;
+    /* height: 100px; */
+    /* text-align: center; */
+    padding: 200px 0px 70px 0px;
+    font-variant: small-caps;
 }
 
 p{
@@ -262,16 +269,7 @@ i {
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     padding: 0px 10px 0px 10px;
-}
-
-#contact-me{
-    position: absolute;
-    left:0;
-    right: 0;
-    width:100%;
-    height: 100px;
-    text-align: center;
-    padding: 200px 0px 180px 0px;
+    font-weight: 400;
 }
 
 #contact-me>div {
@@ -280,11 +278,12 @@ i {
 
 #contact-me>a {
     padding: 5px 0px 5px 0px;
-    margin: 0px;
-    color: darkgrey;
-    font-variant:small-caps;
+    /* margin: 0px; */
+    color: rgba(77, 76, 76, 0.836);
+    /* font-variant:small-caps;
+    font-weight: 400; */
     letter-spacing: 3px;
-    width: auto;
+    /* width: auto; */
     font-size: 12px;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -292,9 +291,10 @@ i {
 }
 
 #contact-me>a>div:hover {
-    color: lightgray;
+    color: black;
     background-color: rgba(211, 211, 211, 0.39);
     border-radius: 2px;
+    transition: 253ms ease;
 }
 
 #contact-me>a>div:visited {
