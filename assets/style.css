@@ -204,7 +204,7 @@ a:hover h3 {
 
 /* project link hovers */
 .first-project-link:hover{
-    background-image: url(/assets/images/magdalenas-bakery-project.png);
+    background-image: url(./images/magdalenas-bakery-project.png);
     background-size: cover;
     background-position: top;
     overflow: scroll;
@@ -213,7 +213,7 @@ a:hover h3 {
 }
 
 .secondary-project-link:hover{
-    background-image: url(/assets/images/cheatsheet.png);
+    background-image: url(./images/cheatsheet.png);
     background-size: cover;
     background-position: top;
     color: rgba(0, 0, 0, 0);
@@ -221,7 +221,7 @@ a:hover h3 {
 }
 
 .third-project-link:hover{
-    background-image: url(/assets/images/refactored_website_screenshot.png);
+    background-image: url(./images/refactored_website_screenshot.png);
     background-size: cover;
     background-position: center;
     color: rgba(0, 0, 0, 0);
