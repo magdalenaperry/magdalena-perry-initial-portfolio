@@ -4,6 +4,14 @@
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+:root {
+    --background: rgba(128, 128, 128, 0.144);
+    --navhoverback: rgba(211, 211, 211, 0.39);
+    --navalink: var(--navalink);
+
+}
+
+
 /* profile picture, name, nav bar styling */
 .headshot{
     border-radius: 50%;
@@ -36,7 +44,7 @@ nav a {
     text-decoration: none;
     padding: 5px 5px 5px 5px;
     margin: 20px;
-    color:darkgrey;
+    color:var(--navalink);
     text-align: center;
     font-variant: small-caps;
     font-size: 18px;
@@ -47,25 +55,25 @@ nav a {
 
 /* navigation bar clicks */
 nav a:visited {
-    color: darkgrey;
+    color: var(--navalink);
 }
 
 nav a:hover {
     color: grey;
     font-weight: bold;
-    background-color: rgba(211, 211, 211, 0.39);
+    background-color: var(--navhoverback);
     border-radius: 4px;
     transition: 253ms ease;
 }
 
 nav a:focus {
-    background-color: rgba(211, 211, 211, 0.39);
-    color: darkgrey;
+    background-color: var(--navhoverback);
+    color: var(--navalink);
     border-radius: 10px;
 }
 
 nav a:active {
-    background-color: rgba(211, 211, 211, 0.39);
+    background-color: var(--navhoverback);;
     color: white;
 }
 
@@ -73,7 +81,7 @@ nav a:active {
 body {
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(128, 128, 128, 0.144);
+    background-color: var(--background)
     color: rgba(0, 0, 0, 0.644);
     line-height: 1.5;
 }
@@ -261,23 +269,23 @@ i {
 
 #contact-me>a>div:hover {
     color: black;
-    background-color: rgba(211, 211, 211, 0.39);
+    background-color: var(--navhoverback);;
     border-radius: 2px;
     transition: 253ms ease;
 }
 
 #contact-me>a>div:visited {
-    color: darkgrey;
+    color: var(--navalink);
 }
 
 #contact-me>a>div:focus {
-    background-color: rgba(211, 211, 211, 0.39);
-    color: darkgrey;
+    background-color: var(--navhoverback);;
+    color: var(--navalink);
     border-radius: 5px;
 }
 
 #contact-me>a>div:active {
-    background-color: rgba(211, 211, 211, 0.39);
+    background-color: var(--navhoverback);;
     color: white;
 }
 
