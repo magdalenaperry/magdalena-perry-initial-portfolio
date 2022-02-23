@@ -11,6 +11,7 @@ My name is Magdalena Perry. This is a portfolio I created to showcase some of my
 
 ## Visuals
 
+![Magdalena Perry Portfolio image](/assets/images/magdalena-perry-portfolio.png)
 
 
 
