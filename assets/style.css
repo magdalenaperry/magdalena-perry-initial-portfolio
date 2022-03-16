@@ -8,9 +8,7 @@
     --background: rgba(128, 128, 128, 0.144);
     --navhoverback: rgba(211, 211, 211, 0.39);
     --navalink: var(--navalink);
-
 }
-
 
 /* profile picture, name, nav bar styling */
 .headshot{
@@ -33,8 +31,10 @@ h1{
     font-weight: 200;
 }
 
+
+
 nav {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
     text-align:center;
     letter-spacing: 5px;
     font-size: 16px;
@@ -64,55 +64,65 @@ nav a:hover {
     background-color: var(--navhoverback);
     border-radius: 4px;
     transition: 253ms ease;
+    
 }
 
 nav a:focus {
     background-color: var(--navhoverback);
     color: var(--navalink);
     border-radius: 10px;
+    
 }
 
 nav a:active {
     background-color: var(--navhoverback);;
     color: white;
+    
 }
 
 /* main body: about me, projects, and text */
 body {
-    margin-left: 150px;
-    margin-right: 150px;
-    background-color: var(--background)
-    color: rgba(0, 0, 0, 0.644);
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: var(--background);
     line-height: 1.5;
 }
 
 /* about me section */
 .about-me {
-padding: 30px 0px 30px 0px;
+padding: 10px 0px 100px 0px;
 }
 
 /* about me paragraph */
 .about {
     text-align: center;
-    padding: 5px 50px 5px 50px;
+    padding: 5px 70px 5px 70px;
     font-weight: 100;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
+    
 }
 
 strong{
     font-size: larger;
 }
 
-/* project title */
-#projects{
-    padding: 100px 0px 20px 0px;
+#project-hide, 
+#about-hide {
+    margin-left: 100px;
+    margin-right: 100px;
 }
+
+
+/* project title */
+/* #projects{
+    /* padding: 100px 0px 20px 0px; */
+/* } */
 
 h2 {
     text-align: center;
-    padding:30px 0px 5px 0px;
+    /* padding:30px 0px 5px 0px; */
     font-variant: small-caps;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
@@ -128,6 +138,7 @@ h2 {
     justify-content: space-between;
     align-items:stretch;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 /* not sure why this makes everything weird? */
@@ -178,7 +189,7 @@ a:hover h3 {
 .secondary-project-link{
     display: block;
     flex-basis:48%;
-    margin:10px 0px 10px 0px;
+    /* margin:10px 0px 10px 0px; */
     padding:80px 0px 80px 0px;
     background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
     background-size: cover;
@@ -188,7 +199,7 @@ a:hover h3 {
 .third-project-link{
     display: block;
     flex-basis: 48%;
-    margin:10px 0px 10px 0px;
+    /* margin:10px 0px 10px 0px; */
     padding:80px 0px 80px 0px;
     background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
     background-size: cover;
@@ -232,14 +243,13 @@ a:hover h3 {
     left:0;
     right: 0;
     width:100%;
-    padding: 200px 0px 70px 0px;
+    /* padding: 200px 0px 70px 0px; */
     font-variant: small-caps;
 }
 
 p{
     display: inline-block;
     text-align: center;
-    padding: 20px 5px 20px 5px;
     font-weight: 100;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
@@ -251,7 +261,17 @@ i {
     font-size: 14px;
     padding: 0px 10px 0px 10px;
     font-weight: 400;
+    color:darkgrey;
 }
+
+
+.project-button:hover{
+    color: black;
+    background-color: lightgrey;
+    margin-top:3px;
+    margin-bottom: 10px;
+}
+
 
 #contact-me>div {
     display: inline-block;
@@ -289,6 +309,9 @@ i {
     color: white;
 }
 
+footer{
+    margin-bottom: 100px;
+}
 
 /* media queries for screen size */
 @media screen and (max-width:915px){
