@@ -13,6 +13,12 @@
 /* profile picture, name, nav bar styling */
 .headshot{
     border-radius: 50%;
+    filter: grayscale(1);
+    transition: 253ms ease;
+}
+
+.headshot:hover{
+    filter:none;
 }
 
 header{
@@ -30,8 +36,6 @@ h1{
     font-variant: small-caps;
     font-weight: 200;
 }
-
-
 
 nav {
     padding-bottom: 10px;
@@ -115,14 +119,8 @@ strong{
 }
 
 
-/* project title */
-/* #projects{
-    /* padding: 100px 0px 20px 0px; */
-/* } */
-
 h2 {
     text-align: center;
-    /* padding:30px 0px 5px 0px; */
     font-variant: small-caps;
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
@@ -142,9 +140,9 @@ h2 {
 }
 
 /* not sure why this makes everything weird? */
-.first-project-link{
+/* .first-project-link{
     color:white;
-}
+} */
 
 /* projects' links' text formatting */
 .first-project-link, 
@@ -155,8 +153,8 @@ h2 {
     font-size: 15px;
     text-align: right;
     padding: 5px 5px 5px 5px; 
-    background-color: rgba(255, 255, 255, 0.027);
-    opacity: 60%;
+    /* background-color: rgba(255, 255, 255, 0.027); */
+    opacity: 70%;
     font-variant: small-caps;
     letter-spacing: 3px;
     text-decoration: none;
@@ -165,7 +163,7 @@ h2 {
 
 h3{
     background-color: rgba(255, 255, 255, 0.315);
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 a:hover h3 {
@@ -176,70 +174,79 @@ a:hover h3 {
 .first-project-link{
     display: block;
     width:100%;
-    height:300px;
-    padding:50px 0px 50px 0px;
+    height:400px;
+    padding:0px 0px 50px 0px;
     /* background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg); */
     background-size: cover;
     border-radius: 3px;
     transition: 253ms ease-out;
     overflow-y:scroll;
+    filter: grayscale(1);
 
 }
 
 /* sets up second project sizing */
-.secondary-project-link{
-    display: block;
-    flex-basis:48%;
+/* .secondary-project-link{ */
+    /* display: block; */
+    /* height: 300px; */
+    /* flex-basis:48%; */
     /* margin:10px 0px 10px 0px; */
-    padding:80px 0px 80px 0px;
-    background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
-    background-size: cover;
-    overflow-y: scroll;
-}
+    /* padding:80px 0px 80px 0px; */
+    /* background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg); */
+    /* background-size: cover; */
+    /* overflow-y: scroll; */
+/* } */
 
 .secondary-project-link,
 .third-project-link{
     display: block;
+    height: 300px;
     flex-basis: 48%;
     /* margin:10px 0px 10px 0px; */
-    padding:80px 0px 80px 0px;
-    background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg);
+    /* padding:80px 0px 80px 0px; */
+    /* background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg); */
     background-size: cover;
     border-radius: 3px;
     transition: 253ms ease;
     overflow-y:scroll;
+    filter: grayscale(1);
 }
 
 
 /* project link hovers */
-.first-project-link:hover{
-    background-image: url(./images/cosmic-dust.png);
-    background-size: cover;
-    background-position: top;
-    overflow: scroll;
-    color: rgba(0, 0, 0, 0);
-    font-weight: bold;
-    overflow-y:scroll ;
-}
+/* .first-project-link:hover{ */
+    /* background-image: url(https://www.meme-arsenal.com/memes/6cc721bdb9bc08ddac22ae3f762bb308.jpg); */
+    /* background-size: cover; */
+    /* background-position: top; */
+    /* overflow: scroll; */
+    /* color: rgba(0, 0, 0, 0.324); */
+    /* font-weight: bold; */
+    /* overflow-y:scroll ; */
+/* } */
 
 .secondary-project-link:hover{
-    background-image: url(./images/weather-dash.png);
+    /* background-image: url(./images/weather-dash.png); */
     background-size: cover;
     background-position: top;
-    color: rgba(0, 0, 0, 0);
+    /* color: rgba(0, 0, 0, 0); */
     font-weight: bold;
     overflow-y:scroll ;
 }
 
 .third-project-link:hover{
-    background-image: url(./images/magdalenas-bakery-project.png);
+    /* background-image: url(./images/magdalenas-bakery-project.png); */
     background-size: cover;
     background-position: center;
-    color: rgba(0, 0, 0, 0);
+    /* color: rgba(0, 0, 0, 0); */
     font-weight:bold;
     background-position: top;
     overflow-y: scroll;
 }
+
+
+
+
+
 
 /* contact section and links*/
 #contact-me {
@@ -253,6 +260,10 @@ a:hover h3 {
     font-variant: small-caps;
 }
 
+
+h6{
+    display: inline-block;
+}
 p{
     display: inline-block;
     text-align: center;
@@ -260,6 +271,7 @@ p{
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     text-decoration: none;
+    margin:0;
 }
 
 i {
@@ -270,12 +282,15 @@ i {
     color:darkgrey;
 }
 
-
+.project-button{
+    margin-bottom:45px;
+    margin-top:5px
+}
 .project-button:hover{
     color: black;
     background-color: lightgrey;
-    margin-top:3px;
-    margin-bottom: 10px;
+    /* margin-top:5px; */
+    /* margin-bottom: 15px; */
 }
 
 
