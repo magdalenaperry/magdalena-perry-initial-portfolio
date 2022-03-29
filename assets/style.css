@@ -15,7 +15,7 @@
     border-radius: 50%;
     filter: grayscale(1);
     transition: 253ms ease;
-    width: 30%;
+    width: 40%;
 }
 
 .headshot:hover{
@@ -303,16 +303,5 @@ footer{
         text-align: center;
         font-variant: small-caps;
         color: grey;
-    }
-}
-
-@media screen and (min-width:1075px){
-    #contact-me a {
-        display:inline-flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        float: none;
-        justify-items: center;
-        align-items:center; 
     }
 }
