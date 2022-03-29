@@ -308,4 +308,8 @@ footer{
         font-variant: small-caps;
         color: grey;
     }
+    header {
+        margin: 50px 0px 50px 0px;
+        text-align: center;
+    }
 }
